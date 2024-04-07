@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <h1>Say "Happy Birthday" to your friend!</h1>
+  <h2 class="de">
+    Welcome to the Blow Out Candle web application! 
+    This interactive web page allows you to virtually blow out a candle on your friend's birthday cake. 
+    Simply blow into your microphone, and watch as the flame magically extinguishes.
+    Make your friend's birthday even more special by celebrating with this fun and unique experience. 
+    Try it out now!
+  </h2>
+
+  <div class="friend-info">
+    <div>
+      <label for="friendName">Friend's Name:</label>
+      <input type="text" id="friendName" placeholder="Enter friend's name">
+    </div>
+    <div>
+      <label for="friendAge">Friend's Age:</label>
+      <input type="number" id="friendAge" placeholder="Enter friend's age">
+    </div>
+    <button id="generateButton">Generate</button>
+  </div>
+
+  <div class="cake">
+    <div class="plate"></div>
+    <div class="layer layer-bottom"></div>
+    <div class="layer layer-middle"></div>
+    <div class="layer layer-top"></div>
+    <div class="icing"></div>
+    <div class="drip drip1"></div>
+    <div class="drip drip2"></div>
+    <div class="drip drip3"></div>
+    <div class="candle">
+      <div class="flame"></div>
+    </div>
+  </div>  
+
+  <script>
+    document.getElementById('generateButton').addEventListener('click', function() {
+      // Get the values entered by the user
+      const friendName = document.getElementById('friendName').value;
+      const friendAge = document.getElementById('friendAge').value;
+
+      // Redirect to the index.html page with the parameters
+      window.location.href = `index.html?name=${encodeURIComponent(friendName)}&age=${encodeURIComponent(friendAge)}`;
+    });
+  </script>
+</body>
+</html>
