@@ -25,6 +25,6 @@ Welcome to the Blow Out Candle web application! This interactive web page allows
 - JavaScript
 
 ## Credits 🙌
-This project was created by Bublinka.
-The CSS cake is created by Mark Thomes. 
-Copyright (c) 2024 by Mark Thomes (https://codepen.io/WithAnEs/pen/OVZRvg)
+- This project was created by Bublinka.
+- The CSS cake is created by Mark Thomes. 
+- Copyright (c) 2024 by Mark Thomes (https://codepen.io/WithAnEs/pen/OVZRvg)
