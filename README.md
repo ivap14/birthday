@@ -16,7 +16,8 @@ Welcome to the Blow Out Candle web application! This interactive web page allows
 
 ## Preview 🎈
 
-![Blow Out Candle Preview](preview.gif)
+![Blow Out Candle Preview](preview.png)
+![Blow Out Candle Preview](happy_birthday.png)
 
 ## Technologies Used 🛠️
 
