@@ -1,3 +1,9 @@
+const params = new URLSearchParams(window.location.search);
+    const friendName = params.get('name');
+    const friendAge = params.get('age');
+
+    document.getElementById('friendName').textContent = friendName;
+    document.getElementById('friendAge').textContent = friendAge;
 
 window.addEventListener('DOMContentLoaded', () => {
   const startButton = document.getElementById('startButton');

@@ -6,29 +6,31 @@
   <title>Happy Birthday</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 <body>
-  <h1>Say "Happy Birthday" to your friend!</h1>
-  <h2 class="de">
+  <div class="content">
+  <h1>Say Happy Birthday to your friend!</h1>
+  <h4>
     Welcome to the Blow Out Candle web application! 
     This interactive web page allows you to virtually blow out a candle on your friend's birthday cake. 
     Simply blow into your microphone, and watch as the flame magically extinguishes.
     Make your friend's birthday even more special by celebrating with this fun and unique experience. 
     Try it out now!
-  </h2>
+  </h4>
 
   <div class="friend-info">
     <div>
-      <label for="friendName">Friend's Name:</label>
       <input type="text" id="friendName" placeholder="Enter friend's name">
     </div>
     <div>
-      <label for="friendAge">Friend's Age:</label>
       <input type="number" id="friendAge" placeholder="Enter friend's age">
     </div>
+  </div>
+  <div class="button-div">
     <button id="generateButton">Generate</button>
   </div>
-
+  
   <div class="cake">
     <div class="plate"></div>
     <div class="layer layer-bottom"></div>
@@ -41,20 +43,19 @@
     <div class="candle">
       <div class="flame"></div>
     </div>
-  </div>  
+  </div>
 
-  <script>
-    document.getElementById('generateButton').addEventListener('click', function() {
-      // Get the values entered by the user
-      const friendName = document.getElementById('friendName').value;
-      const friendAge = document.getElementById('friendAge').value;
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <h2>Share the link with your friend!</h2>
+      <span class="close">&times;</span>
+      <input type="text" id="urlField" readonly style="width: 80%; margin-bottom: 10px;">
+      <button onclick="copyUrl()">Copy</button>
+      <button onclick="openPage()">View</button>
+    </div>
+  </div>
 
-      // Redirect to the index.html page with the parameters
-      window.location.href = `happy_b.html?name=${encodeURIComponent(friendName)}&age=${encodeURIComponent(friendAge)}`;
-    });
-    
-    
-  </script>
-  <script src="script.js"></script>
+  <script src="code_for_main.js">  </script>
+</div>
 </body>
 </html>

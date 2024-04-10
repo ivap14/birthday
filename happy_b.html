@@ -9,6 +9,7 @@
 
 </head>
 <body>
+  <div class="content">
   <h1>Happy Birthday!</h1>
   <h2 id="friendName">Name</h2>
   <h3>to your <span id="friendAge">xx</span> th Birthday</h3>
@@ -25,17 +26,11 @@
           <div class="flame"></div>
       </div>
   </div>
-  <button id="startButton">Blow the candle</button>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const friendName = params.get('name');
-    const friendAge = params.get('age');
-
-    document.getElementById('friendName').textContent = friendName;
-    document.getElementById('friendAge').textContent = friendAge;
-
-    
-  </script>
-   <script src="script.js"></script>
+  
+  <div class="center-container">
+    <button id="startButton">Blow the candle</button>
+  </div>
+  <script src="code.js"></script>
+</div>
 </body>
 </html>
