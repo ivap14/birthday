@@ -2,8 +2,7 @@ document.getElementById('generateButton').addEventListener('click', function() {
   const friendName = document.getElementById('friendName').value;
   const friendAge = document.getElementById('friendAge').value;
 
-  const currentDomain = window.location.origin;
-  console.log(currentDomain);
+  const currentDomain = window.location 
   const url = `${currentDomain}/happy_b.html?name=${encodeURIComponent(friendName)}&age=${encodeURIComponent(friendAge)}`;
   document.getElementById('urlField').value = url;
 
